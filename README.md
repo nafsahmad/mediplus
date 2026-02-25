@@ -1,8 +1,11 @@
 # Deploying Mediplus: A Production-Ready CI/CD Pipeline
 
+
 ## The Challenge
 
+
 Most web applications require manual deployment—a developer builds the code locally, copies files to a server, restarts services, and hopes nothing breaks. This is slow, error-prone, and doesn't scale.
+
 
 ## The Solution
 
@@ -11,9 +14,12 @@ I built a fully automated DevOps pipeline for Mediplus, a medical tech web appli
 - Built and pushed to AWS ECR
 - Deployed to production with HTTPS
 
+
 Zero manual intervention. Zero downtime.
 
+
 ## Architecture
+
 
 ![Architecture Diagram](./architecture-diagram.png)
 
@@ -430,3 +436,4 @@ This project is for educational and portfolio purposes.
 - AWS documentation for ECR and EC2 best practices
 - Let's Encrypt for free SSL certificates
 - The DevOps community for continuous learning resources 
+
