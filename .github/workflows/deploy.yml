@@ -1,4 +1,4 @@
-name: CI/CD Pipeline - Medplus App
+name: CI/CD Pipeline - Mediplus App
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
     - name: Build, Tag, and Push Docker Image
       run: |
-        IMAGE_URI=${{ secrets.REGISTRY_NAME }}/medplux:$GITHUB_RUN_NUMBER
+        IMAGE_URI=${{ secrets.REGISTRY_NAME }}:$GITHUB_RUN_NUMBER
         docker build -t $IMAGE_URI .
         docker push $IMAGE_URI
 
@@ -41,10 +41,10 @@ jobs:
         GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
       run: |
         git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/digitalwitchdemo/kubernetes-manifest.git
-        cd kubernetes-manifest/medplux-yaml
+        cd kubernetes-manifest/mediplus-yaml
         cat deployment.yaml
 
-        sed -i "s+032474760548.dkr.ecr.us-east-1.amazonaws.com/medplux:.*+032474760548.dkr.ecr.us-east-1.amazonaws.com/medplux:$GITHUB_RUN_NUMBER+g" deployment.yaml
+        sed -i "s+032474760548.dkr.ecr.us-east-1.amazonaws.com/mediplus:.*+032474760548.dkr.ecr.us-east-1.amazonaws.com/mediplus:$GITHUB_RUN_NUMBER+g" deployment.yaml
         cat deployment.yaml
         git config user.email support@digitalwitchng.online
         git config user.name ${GIT_USERNAME}
