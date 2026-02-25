@@ -21,7 +21,7 @@ Zero manual intervention. Zero downtime.
 ## Architecture
 
 
-![Architecture Diagram](.img\architecture-diagram.png)
+![Architecture Diagram](https://github.com/nafsahmad/mediplus/blob/main/img/architecture-diagram.png)
 
 The system uses two EC2 instances:
 
