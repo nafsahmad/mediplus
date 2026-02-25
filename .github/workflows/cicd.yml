@@ -22,11 +22,11 @@
 
 #       - name: Login to Amazon ECR
 #         run: |
-#           aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 892004491300.dkr.ecr.eu-north-1.amazonaws.com
+#           aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 032474760548.dkr.ecr.eu-north-1.amazonaws.com
 
 #       - name: Build, tag, and push image to Amazon ECR
 #         run: |
 #           docker build -t mediplus:v1 .
-#           docker tag mediplus:v1 892004491300.dkr.ecr.eu-north-1.amazonaws.com/mediplus:v1
-#           docker push 892004491300.dkr.ecr.eu-north-1.amazonaws.com/mediplus:v1
+#           docker tag mediplus:v1 032474760548.dkr.ecr.eu-north-1.amazonaws.com/mediplus:v1
+#           docker push 032474760548.dkr.ecr.eu-north-1.amazonaws.com/mediplus:v1
 

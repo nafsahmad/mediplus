@@ -44,7 +44,7 @@ jobs:
         cd kubernetes-manifest/medplux-yaml
         cat deployment.yaml
 
-        sed -i "s+696035274327.dkr.ecr.us-east-1.amazonaws.com/medplux:.*+696035274327.dkr.ecr.us-east-1.amazonaws.com/medplux:$GITHUB_RUN_NUMBER+g" deployment.yaml
+        sed -i "s+032474760548.dkr.ecr.us-east-1.amazonaws.com/medplux:.*+032474760548.dkr.ecr.us-east-1.amazonaws.com/medplux:$GITHUB_RUN_NUMBER+g" deployment.yaml
         cat deployment.yaml
         git config user.email support@digitalwitchng.online
         git config user.name ${GIT_USERNAME}
