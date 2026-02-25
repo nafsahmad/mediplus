@@ -21,9 +21,7 @@ Zero manual intervention. Zero downtime.
 ## Architecture
 
 
-![Architecture Diagram](./architecture-diagram.png)
-
-> **Note:** Create a simple architecture diagram showing: GitHub → GitHub Actions → AWS ECR → EC2 (App Server) → EC2 (Nginx Proxy) → User, with Let's Encrypt connecting to the proxy. Save it as `architecture-diagram.png` in your repo.
+![Architecture Diagram](.img\architecture-diagram.png)
 
 The system uses two EC2 instances:
 
